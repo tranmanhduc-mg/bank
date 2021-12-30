@@ -1,15 +1,40 @@
 // handler slider
- 
-changeImage = function(){
-    var imgs = ["./assets/img/slider2.jpg","./assets/img/slider3.jpg","./assets/img/slider4.jpg"]
-    document.getElementById('img').src = imgs[index];
+function handleSLider() {
+  let index = 1;
+  changeImage = function () {
+    let imgs = [
+      "./assets/img/slider2.jpg",
+      "./assets/img/slider3.jpg",
+      "./assets/img/slider4.jpg",
+    ];
+    document.getElementById("img").src = imgs[index];
     index++;
-    if(index==3){
-        index = 0;
+    if (index == 3) {
+      index = 0;
     }
+  };
+  setInterval(changeImage, 3000);
 }
-setInterval(changeImage,3000)
-var index = 1;
- 
 
+handleSLider();
 
+const imgContent = document.querySelector(".img-tab-pane");
+const tabs = [...document.querySelectorAll(".total-col")];
+const ImgArray = [
+  "./assets/img/tab1.jpg",
+  "./assets/img/tab2.jpg",
+  "./assets/img/tab3.jpg",
+  "./assets/img/tab4.jpg",
+  "./assets/img/tab5.jpg",
+];
+
+tabs.forEach((tab, id) => {
+  tab.addEventListener("mouseover", handleSwitchTab);
+  function handleSwitchTab() {
+    ImgArray.forEach((img, index) => {
+      if (id === index) {
+        imgContent.src = img;
+      }
+    });
+  }
+});
