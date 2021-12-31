@@ -6,6 +6,8 @@ function handleSLider() {
       "./assets/img/slider2.jpg",
       "./assets/img/slider3.jpg",
       "./assets/img/slider4.jpg",
+      "./assets/img/slider5.jpg",
+
     ];
     document.getElementById("img").src = imgs[index];
     index++;
@@ -19,7 +21,7 @@ function handleSLider() {
 handleSLider();
 
 const imgContent = document.querySelector(".img-tab-pane");
-const imgsubcontent = document.querySelector(".img-tab-paned")
+const imgsubcontent = document.querySelector(".img-tab-paned");
 const tabs = [...document.querySelectorAll(".total-col")];
 const ImgArray = [
   
@@ -41,15 +43,13 @@ tabs.forEach((tab, id) => {
   }
 });
 
-const ImgsArray = [
-  
+const ImgsArray = [ 
   "./assets/img/Banner_01.jpg",
   "./assets/img/Banner_02.jpg",
   "./assets/img/Banner_03.jpg",
   "./assets/img/Banner_04.jpg",
   "./assets/img/Banner_05.jpg",
 ];
-
 tabs.forEach((tab, id) =>{
   tab.addEventListener("mouseover", handleSwitchTab);
   function handleSwitchTab(){
@@ -60,6 +60,7 @@ tabs.forEach((tab, id) =>{
     });
   }
 });
+
 
 
 

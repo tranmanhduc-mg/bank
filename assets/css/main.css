@@ -30,7 +30,7 @@ h1 {
 
 html {
   font-family: "Open Sans", sans-serif;
-  /* user-select: none; */
+  width: 100vw;
 }
 
 /* Button */
@@ -72,9 +72,13 @@ html {
     opacity: 1;
   }
 }
+#app{
+  
+}
 
 /* Header */
 .header {
+  
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -145,7 +149,7 @@ html {
   display: block;
   color: var(--white-color);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 50px !important;
 }
 .navbar__link-light {
@@ -172,6 +176,7 @@ html {
   left: 120px;
 }
 
+
 .submenu {
   background-color: #edeef2;
   border-radius: 6px;
@@ -183,6 +188,7 @@ html {
   left: -100px;
   z-index: 2;
 }
+
 
 .product-section {
   padding: 10px 14px;
@@ -249,6 +255,7 @@ html {
   
 }
 .bank-support {
+  width: 100%;
   height: 550px;
   background-color: #edeef2;
 }
@@ -352,7 +359,7 @@ html {
 }
 .sub-text {
   color: var(--black-color);
-  font-weight: bold;
+  font-weight: bold; 
   font-size: 18px;
 }
 .sub-text:hover {
@@ -360,7 +367,8 @@ html {
 }
 .benefit-banking {
   margin-top: 40px;
-  width: 1300px;
+  max-width: 100%;
+  width: 1280px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 12px;
@@ -409,10 +417,22 @@ html {
 }
 .voucher-app{
   width: 35%;
-  background-color: yellow;
+  background-color: gainsboro;
   float: left;
-  height: 350px;
+  height: 340px;
+  border-radius: 8px;
   margin: 20px 20px;
+}
+.voucher-text h2{
+  margin: 40px 40px;
+}
+.voucher-text i{
+  margin-left: 20px;
+}
+
+.voucher-text span{
+  margin: 10px;
+  display: inline-block;
 }
 .img-tab-paned {
   float: right;
@@ -420,20 +440,45 @@ html {
   margin-top: 20px;
   border-radius: 4px;
 }
+.end-line{
+  background-color: gainsboro;
+  height: 100px;
+  margin-top: 400px;
+}
+.end-text{
+  
+}
+.end-text span{
+  font-weight: bold;
+  float: right;
+  margin-right: 20px;
+  line-height: 100px;
+}
+.policy-text{
+  margin-left: 40px;
+  line-height: 100px;
+  font-weight: bold;
+}
+.policy-text:hover{
+  text-decoration: underline;
+}
 .footer {
   width: 100%;
-  display: flex;
   height: 70px;
   background-color: var(--text-color);
 }
+.logo__footer-img{
+  margin: 20px 20px;
+}
 .footer .copyright {
   color: #cbb8e3;
+  float: right;
   line-height: 70px;
-  margin: 0 50px;
+  margin-right: 20px;
 }
-.brand-icon {
-  line-height: 70px;
 
-  color: blue;
-  font-size: 20px;
+.header-border-bottom {
+  position: relative;
+  height: 4px;
+  background-image: linear-gradient(to right, rgb(94, 46, 134), rgb(164, 50, 203) 34%, rgb(225, 98, 40) 69%, rgb(254, 153, 1));
 }
