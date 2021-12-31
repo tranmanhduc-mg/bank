@@ -19,8 +19,10 @@ function handleSLider() {
 handleSLider();
 
 const imgContent = document.querySelector(".img-tab-pane");
+const imgsubcontent = document.querySelector(".img-tab-paned")
 const tabs = [...document.querySelectorAll(".total-col")];
 const ImgArray = [
+  
   "./assets/img/tab1.jpg",
   "./assets/img/tab2.jpg",
   "./assets/img/tab3.jpg",
@@ -38,3 +40,27 @@ tabs.forEach((tab, id) => {
     });
   }
 });
+
+const ImgsArray = [
+  
+  "./assets/img/Banner_01.jpg",
+  "./assets/img/Banner_02.jpg",
+  "./assets/img/Banner_03.jpg",
+  "./assets/img/Banner_04.jpg",
+  "./assets/img/Banner_05.jpg",
+];
+
+tabs.forEach((tab, id) =>{
+  tab.addEventListener("mouseover", handleSwitchTab);
+  function handleSwitchTab(){
+    ImgsArray.forEach((img, index) =>{
+      if(id === index){
+        imgsubcontent.src = img;
+      }
+    });
+  }
+});
+
+
+
+

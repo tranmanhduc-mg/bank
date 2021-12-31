@@ -79,7 +79,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+ 
   background-color: var(--text-color);
   position: relative;
   z-index: 9;
@@ -145,15 +145,15 @@ html {
   display: block;
   color: var(--white-color);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 50px !important;
 }
 .navbar__link-light {
   text-decoration: none;
   display: block;
   color: var(--white-color);
-  font-weight: lighter;
-  font-size: 16px;
+  font-weight: 200;
+  font-size: 18px;
   line-height: 50px !important;
 }
 
@@ -179,7 +179,6 @@ html {
   display: none;
   justify-content: start;
   flex-wrap: wrap;
-
   position: absolute;
   left: -100px;
   z-index: 2;
@@ -247,7 +246,7 @@ html {
 
 /* Content */
 .content__container {
-  height: 1500px;
+  
 }
 .bank-support {
   height: 550px;
@@ -401,13 +400,26 @@ html {
 .total-col:hover {
   background-color: var(--text-color);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .total-col h2 {
   display: block;
   font-size: 22px;
 }
-
+.voucher-app{
+  width: 35%;
+  background-color: yellow;
+  float: left;
+  height: 350px;
+  margin: 20px 20px;
+}
+.img-tab-paned {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
 .footer {
   width: 100%;
   display: flex;
